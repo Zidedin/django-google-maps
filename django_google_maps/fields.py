@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # The core of this module was adapted from Google AppEngine's
 # GeoPt field, so I've included their copyright and license.
 #
@@ -19,7 +20,6 @@
 from django.core import exceptions
 from django.db import models
 from django.utils.encoding import force_text
-from django.utils.six import python_2_unicode_compatible
 
 __all__ = ('AddressField', 'GeoLocationField')
 
@@ -33,7 +33,6 @@ def typename(obj):
         return type(obj).__name__
 
 
-@python_2_unicode_compatible
 class GeoPt(object):
     """A geographical point."""
 
