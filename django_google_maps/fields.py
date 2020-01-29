@@ -18,7 +18,8 @@
 
 from django.core import exceptions
 from django.db import models
-from django.utils.encoding import force_text, python_2_unicode_compatible
+from django.utils.encoding import force_text
+from django.utils.six import python_2_unicode_compatible
 
 __all__ = ('AddressField', 'GeoLocationField')
 
